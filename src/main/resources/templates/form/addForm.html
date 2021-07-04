@@ -22,6 +22,11 @@
         <div>
             <label for="itemName">상품명</label>
             <input type="text" id="itemName" th:field="*{itemName}" class="form-control" placeholder="이름을 입력하세요">
+<!--
+            <input type="text" th:field="*{itemName}" class="form-control" placeholder="이름을 입력하세요">
+               field를 사용하면서 id, name 모두 지울 수 있는데 지금은 label이 id를 쓰고 있어서 그냥 둠.
+               field는 id, name, value를 한 방에 처리해준다.
+-->
         </div>
         <div>
             <label for="price">가격</label>
